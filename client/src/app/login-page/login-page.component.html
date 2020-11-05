@@ -1,0 +1,9 @@
+<div style="width: 85%; margin: 0 auto; margin-top: 25px;">
+  <div class="card p-5">
+    <h4>Write your email!!!</h4>
+    <input type="text" class="form-control" [(ngModel)]="User.email">
+    <h4>Write your password!!!</h4>
+    <input type="password" class="form-control" [(ngModel)]="User.password">
+    <a href="" class="btn btn-primary btn-block mt-3" [routerLink]="['/chat', User.email]">Login</a>
+  </div>
+</div>

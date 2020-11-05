@@ -1,0 +1,14 @@
+{
+  "name": "microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "nodemon ./api/server",
+    "sockets": "nodemon ./sockets/index",
+    "client": "npm run start --prefix ./client",
+    "start": "concurrently \"npm run api\" \"npm run client\" \"npm run sockets\""
+  },
+  "author": "",
+  "license": "ISC"
+}
